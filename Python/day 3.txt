@@ -1,0 +1,17 @@
+The first line contains . The second line contains an array of integers each separated by a space.
+Constraints
+	•	
+	•	
+Output Format
+Print the runner-up score.
+Sample Input 0
+
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr=set(arr)
+    arr=list(arr)
+    arr[arr.index(max(arr))]=min(arr)
+    print(max(arr))
+
